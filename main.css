@@ -3,57 +3,72 @@ body * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+
+    /* params for grid layout */
+    border: 1px solid black;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
+.nav {
+    display: grid;
+    grid-template-columns: auto max-content;
+}
+
+.nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main-article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer-list {
+    grid-column: span 2;
+}
+
+.list--horizontal {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+}
+
+.footer-article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 /* images */
 .main-article__img {
     background-image: url(./assets/images/image-web-3-desktop.jpg);
     background-repeat: no-repeat;
-    /* width: 100%;
-    height: 100%; */
-
-    /* params for grid layout */
-    width: 300px;
-    height: 100px;
     background-size: cover;
+    grid-column: span 2;
 }
 
-.article-img1 {
+.footer-article__img {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    grid-row: span 3;
+}
+
+#first-article-image {
     background-image: url(./assets/images/image-retro-pcs.jpg);
-    background-repeat: no-repeat;
-    /* width: 100%;
-    height: 100%; */
-
-    /* params for grid layout */
-    width: 100px;
-    height: 200px;
-    background-size: cover;
 }
 
-.article-img2 {
+#second-article-image {
     background-image: url(./assets/images/image-top-laptops.jpg);
-    background-repeat: no-repeat;
-    /* width: 100%;
-    height: 100%; */
-
-    /* params for grid layout */
-    width: 100px;
-    height: 200px;
-    background-size: cover;
 }
 
-.article-img3 {
+#third-article-image {
     background-image: url(./assets/images/image-gaming-growth.jpg);
-    background-repeat: no-repeat;
-    /* width: 100%;
-    height: 100%; */
-
-    /* params for grid layout */
-    width: 100px;
-    height: 200px;
-    background-size: cover;
 }
