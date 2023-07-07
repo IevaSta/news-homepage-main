@@ -50,15 +50,8 @@ body * {
     background-image: url(./assets/images/image-web-3-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     grid-column: span 2;
-}
-
-.footer-article__img {
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    grid-row: span 3;
 }
 
 #first-article-image {
@@ -71,4 +64,16 @@ body * {
 
 #third-article-image {
     background-image: url(./assets/images/image-gaming-growth.jpg);
+}
+
+.footer-article__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    grid-row: span 3;
+}
+
+.footer {
+    display: grid;
+    justify-items: center;
 }
