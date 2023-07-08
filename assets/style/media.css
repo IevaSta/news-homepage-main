@@ -1,8 +1,4 @@
 :root {
-/* breakpoints min-width */
---tablet: 768px;
---desktop: 1024px;
-
 /* colors */
 --soft-orange: hsl(35, 77%, 62%);
 --soft-red: hsl(5, 85%, 63%);
