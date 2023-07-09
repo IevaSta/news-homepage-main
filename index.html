@@ -25,6 +25,7 @@
 
   <!-- Style -->
   <link rel="stylesheet" href="./assets/style/media.css">
+  <link rel="stylesheet" href="./assets/style/burgermenu.css">
   <link rel="stylesheet" href="./main.css">
 
   <title>Frontend Mentor | News homepage</title>
@@ -41,13 +42,19 @@ block name-name2
   <header>
     <nav class="nav">
       <img class="nav__logo" src="./assets/images/logo.svg" alt="News homepage logo.">
-      <ul class="nav__list">
-        <li class="nav__list-item"><a class="nav__link" href="#">Home</a></li>
+
+      <label class="burger">
+        <input class="burger__bar" type="checkbox">
+      </label>
+
+      <ul class="nav__list nav__list--horizontal">
+        <li class="nav__list-item"><a class="nav__link nav__link--mobile" href="#">Home</a></li>
         <li class="nav__list-item"><a class="nav__link" href="#">New</a></li>
         <li class="nav__list-item"><a class="nav__link" href="#">Popular</a></li>
         <li class="nav__list-item"><a class="nav__link" href="#">Trending</a></li>
         <li class="nav__list-item"><a class="nav__link" href="#">Categories</a></li>
       </ul>
+
     </nav>
   </header>
 
