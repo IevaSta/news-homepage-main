@@ -15,6 +15,7 @@ body {
     margin: 5%;
     font-family: 'Inter', sans-serif;
     font-size: var(--paragraph);
+    color: var(--very-dark-blue);
 }
 
 .nav,
@@ -64,6 +65,11 @@ a:hover {
     width: 100%;
 }
 
+.main-article__title--font {
+    font-size: var(--main-title);
+    line-height: 1;
+}
+
 .footer-article {
     grid-template-columns: 1fr 2fr;
 }
@@ -71,6 +77,11 @@ a:hover {
 .footer-article__img {
     width: 100%;
     grid-row: span 3;
+}
+
+.article__intro--font {
+    color: var(--dark-grayish-blue);
+    line-height: 1.8;
 }
 
 .footer {
