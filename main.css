@@ -95,7 +95,7 @@ a:hover {
     font-size: var(--list-title);
 }
 
-.light__intro--font {
+.light--font {
     color: var(--grayish-blue);
     line-height: 1.8;
 }
@@ -140,9 +140,18 @@ a:hover {
     }
 
     .list--horizontal {
+        margin-top: 50px;
         display: grid;
         grid-auto-columns: 1fr;
         grid-auto-flow: column;
+    }
+
+    .footer-article--border {
+        border-right: 1px solid var(--grayish-blue);
+    }
+
+    .footer-article__intro{
+        grid-column: span 2;
     }
 }
 
@@ -155,7 +164,21 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
+    .site-section--wrapper {
+        margin: 0;
+    }
+
     .footer-list {
         grid-column: span 2;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer-article--border {
+        border-right: none;
+    }
+
+    .footer-article__intro{
+        grid-column: span 1;
     }
 }
