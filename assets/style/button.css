@@ -1,0 +1,16 @@
+.main-article__button {
+    border: none;
+    width: max-content;
+    padding: 20px 50px;
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.main-article__button:hover,
+.main-article__button:focus,
+.main-article__button:active {
+    background-color: var(--dark-grayish-blue);
+}
