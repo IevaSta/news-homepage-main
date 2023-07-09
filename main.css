@@ -1,3 +1,5 @@
+/* basic reset */
+
 body,
 body * {
     margin: 0;
@@ -7,18 +9,39 @@ body * {
     list-style: none;
 }
 
+/* style */
+
 body {
     margin: 5%;
     font-family: 'Inter', sans-serif;
     font-size: var(--paragraph);
 }
 
+.nav,
+.main-content,
+.side-section,
+.footer-list,
+.footer,
+.main-article,
+.main-article__intro-container,
+.list,
+.footer-article,
+.footer {
+    display: grid;
+    gap: 20px;
+}
+
+/* header *,
+main *,
+footer * {
+    display: grid;
+    gap: 20px;
+} */
 
 /* -------mobile first------- */
-/* header */
 .nav {
-    display: grid;
     grid-template-columns: repeat(3, auto);
+    margin-bottom: 5%;
 }
 
 .nav__logo {
@@ -35,65 +58,22 @@ a:hover {
     text-decoration: underline;
 }
 
-/* main */
-.main-content {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.main-article {
-    display: grid;
-    grid-template-columns: 1fr;
+.main-article__img {
+    width: 100%;
+    height: max-content;
 }
 
 .footer-article {
-    display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-/* main images */
-/* #artical-image {
-    background-image: url(./assets/images/image-web-3-mobile.jpg);
-} */
-
-/* .main-article__img-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    grid-column: span 2;
-} */
-
-.main-article__img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: max-content;
-    /* grid-column: span 2; */
-}
-
-#first-footer-image {
-    background-image: url(./assets/images/image-retro-pcs.jpg);
-}
-
-#second-footer-image {
-    background-image: url(./assets/images/image-top-laptops.jpg);
-}
-
-#third-footer-image {
-    background-image: url(./assets/images/image-gaming-growth.jpg);
-}
-
 .footer-article__img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+    width: 100%;
     grid-row: span 3;
 }
 
-/* footer */
-
 .footer {
-    display: grid;
+    margin-top: 5%;
     justify-items: center;
 }
 
