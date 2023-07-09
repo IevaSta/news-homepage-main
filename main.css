@@ -70,22 +70,53 @@ a:hover {
     line-height: 1;
 }
 
-.footer-article {
-    grid-template-columns: 1fr 2fr;
-}
-
-.footer-article__img {
-    width: 100%;
-    grid-row: span 3;
-}
-
 .article__intro--font {
     color: var(--dark-grayish-blue);
     line-height: 1.8;
 }
 
+.site-section--wrapper {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: var(--very-dark-blue);
+}
+
+.article--wrapper {
+    border-bottom: 1px solid var(--grayish-blue);
+    padding-bottom: 20px;
+}
+
+.article {
+    gap: 5px;
+}
+
+.title--font {
+    color: var(--soft-orange);
+    font-size: var(--list-title);
+}
+
+.light__intro--font {
+    color: var(--grayish-blue);
+    line-height: 1.8;
+}
+
+.footer-article {
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.footer-article__img {
+    max-width: 100%;
+    grid-row: span 3;
+}
+
+.artical--numbers {
+    color: var(--grayish-blue);
+    font-size: var(--article-title);
+}
+
 .footer {
-    margin-top: 5%;
+    margin-top: 50px;
     justify-items: center;
 }
 
