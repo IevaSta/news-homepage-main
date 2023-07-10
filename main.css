@@ -27,19 +27,10 @@ body {
 .main-article__intro-container,
 .list,
 .article,
-.footer-article,
-.footer {
+.footer-article {
     display: grid;
     gap: 20px;
 }
-
-/* header *,
-main *,
-footer * {
-    display: grid;
-    gap: 20px;
-} */
-
 /* -------mobile first------- */
 .nav {
     grid-template-columns: repeat(3, auto);
