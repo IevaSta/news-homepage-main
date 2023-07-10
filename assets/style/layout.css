@@ -60,6 +60,10 @@
         grid-auto-flow: column;
     }
 
+    .footer-article__img {
+        grid-row: span 2;
+    }
+
     .footer-article__intro{
         grid-column: span 2;
     }
