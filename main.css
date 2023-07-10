@@ -32,6 +32,7 @@ a:hover {
 }
 
 .side-section--dark-bckgrnd {
+    padding: 20px;
     background-color: var(--very-dark-blue);
 }
 
@@ -41,12 +42,30 @@ a:hover {
 }
 
 .main-article__img {
-    content: url(./assets/images/image-web-3-mobile.jpg);
-    width: 100%;
+    background-image: url(./assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin-bottom: 20px;
 }
 
-.footer-article__img {
-    max-width: 100%;
+.article-wrapper__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 150px;
+    min-height: 200px;
+}
+
+#article-wrapper__img--first {
+    background-image: url(./assets/images/image-retro-pcs.jpg);
+}
+
+#article-wrapper__img--second {
+    background-image: url(./assets/images/image-top-laptops.jpg);
+}
+
+#article-wrapper__img--third {
+    background-image: url(./assets/images/image-gaming-growth.jpg);
 }
 
 .author {
@@ -58,11 +77,13 @@ a:hover {
 .main--heading {
     font-size: var(--main-title);
     line-height: 1;
+    margin-bottom: 20px;
 }
 
 .aside-heading {
     color: var(--soft-orange);
     font-size: var(--list-title);
+    margin-bottom: 30px;
 }
 
 .paragraph--font-dark {
@@ -78,13 +99,17 @@ a:hover {
 .article--numbers {
     color: var(--grayish-blue);
     font-size: var(--article-title);
+    margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
     .main-article__img {
-        content: url(./assets/images/image-web-3-desktop.jpg);
-        width: 100%;
+        background-image: url(./assets/images/image-web-3-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 300px;
     }
+
     .footer-article--border {
         border-right: 1px solid var(--grayish-blue);
     }

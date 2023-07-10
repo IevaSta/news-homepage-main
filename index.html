@@ -30,12 +30,6 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 
-<!--  BEM
-block name-name2
-+ element   block-name__element-element2
-+ mod block-name__element-element2--modname-modname2
- -->
-
 <body>
   <header>
     <nav class="nav">
@@ -55,73 +49,84 @@ block name-name2
     </nav>
   </header>
 
-  <main class="main-content">
-    <section class="main-article">
-      <img class="main-article__img" alt="Main article image." />
-      <h1 class="main-article__title main--heading">The Bright Future of Web 3.0?</h1>
-      <section class="main-article__intro-container">
-        <p class="main-article__intro paragraph--font-dark">We dive into the next evolution of the web that claims to put the power of
-          the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-        <button class="main-article__button">Read more</button>
-      </section>
+  <!-- Luka's challenge - use one grid for main element -->
+  <!-- Luka's challenge start -->
+  <main class="main-wrapper">
+    <section class="main-section-wrapper">
+      <div class="main-article__img"></div>
+      <div class="main-section-wrapper__content">
+        <h1 class="main--heading">The Bright Future of Web 3.0?</h1>
+        <section >
+          <p class="paragraph--font-dark">We dive into the next evolution of the web that claims to put the power of
+            the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button class="main-article__button">Read more</button>
+        </section>
+      </div>
     </section>
 
-    <aside class="side-section side-section--dark-bckgrnd ">
+    <aside class="news-wrapper side-section--dark-bckgrnd">
       <header>
-        <h2 class="list__title aside-heading"> New</h2>
+        <h2 class="aside-heading"> New</h2>
       </header>
-      <ul class="list paragraph--font-light">
-        <li class="list__item">
-          <article class="article article--border">
-            <h3 class="article__title">Hydrogen VS Electric Cars</h3>
-            <p class="article__intro">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <ul class="aside-list paragraph--font-light">
+        <li>
+          <article class="article--border">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           </article>
         </li>
-        <li class="list__item">
-          <article class="article article--border">
-            <h3 class="article__title">The Downsides of AI Artistry</h3>
-            <p class="article__intro"> What are the possible adverse effects of on-demand AI image generation?</p>
+        <li>
+          <article class="article--border">
+            <h3>The Downsides of AI Artistry</h3>
+            <p> What are the possible adverse effects of on-demand AI image generation?</p>
           </article>
         </li>
-        <li class="list__item">
-          <article class="article">
-            <h3 class="article__title">Is VC Funding Drying Up?</h3>
-            <p class="article__intro"> Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        <li>
+          <article>
+            <h3 >Is VC Funding Drying Up?</h3>
+            <p> Private funding by VC firms is down 50% YOY. We take a look at what that means.
             </p>
           </article>
         </li>
       </ul>
     </aside>
 
-    <footer class="footer-list">
-      <ul class="list list--horizontal">
-        <li class="list__item">
-          <article class="footer-article footer-article--border">
-            <img class="footer-article__img" src="./assets/images/image-retro-pcs.jpg" >
-            <h2 class="footer-article__number article--numbers">01</h2>
-            <h3 class="footer-article__title">Reviving Retro PCs</h3>
-            <p class="footer-article__intro paragraph--font-dark">What happens when old PCs are given modern upgrades?</p>
+    <section class="article-wrapper">
+      <ul class="article-wrapper__list">
+        <li>
+          <article class="article-wrapper__card">
+            <div class="article-wrapper__img" id="article-wrapper__img--first"></div>
+            <div class="article-wrapper__news">
+              <h2 class="article--numbers">01</h2>
+              <h3>Reviving Retro PCs</h3>
+              <p class="paragraph--font-dark">What happens when old PCs are given modern upgrades?</p>
+            </div>
           </article>
         </li>
         <li>
-          <article class="footer-article footer-article--border">
-            <img class="footer-article__img" src="./assets/images/image-top-laptops.jpg" >
-            <h2 class="footer-article__number article--numbers">02</h2>
-            <h3 class="footer-article__title">Top 10 Laptops of 2022</h3>
-            <p class="footer-article__intro paragraph--font-dark">Our best picks for various needs and budgets.</p>
+          <article class="article-wrapper__card">
+            <div class="article-wrapper__img" id="article-wrapper__img--second"></div>
+            <div class="article-wrapper__news">
+            <h2 class="article--numbers">02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p class="paragraph--font-dark">Our best picks for various needs and budgets.</p>
+          </div>
           </article>
         </li>
         <li>
-          <article class="footer-article">
-            <img class="footer-article__img" src="./assets/images/image-gaming-growth.jpg ">
-            <h2 class="footer-article__number article--numbers">03</h2>
-            <h3 class="footer-article__title">The Growth of Gaming</h3>
-            <p class="footer-article__intro paragraph--font-dark">How the pandemic has sparked fresh opportunities.</p>
+          <article class="article-wrapper__card"> 
+            <div class="article-wrapper__img" id="article-wrapper__img--third"></div>
+            <div class="article-wrapper__news">
+            <h2 class="article--numbers">03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p class="paragraph--font-dark">How the pandemic has sparked fresh opportunities.</p>
+          </div>
           </article>
         </li>
       </ul>
-    </footer>
+    </section>
   </main>
+<!-- Luka's challenge end -->
 
   <footer class="author">
     <small>

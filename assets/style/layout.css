@@ -1,39 +1,45 @@
-.nav,
-.main-content,
-.main-article,
-.main-article__intro-container,
-.side-section,
-.list,
-.article,
-.footer-list,
-.footer-article,
-.author {
+/* Luka's challenge - use one grid for main element */
+
+.nav {
     display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 5%;
     gap: 20px;
 }
 
-/* -------mobile first------- */
-.nav {
-    grid-template-columns: repeat(3, auto);
-    margin-bottom: 5%;
+/* Luka's challenge start  */
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.side-section {
-    margin: 50px 0;
-    padding: 20px;
+.main-section-wrapper {
+    grid-area: 1 / 1 / span 3 / span 3;
 }
 
-.article {
-    gap: 5px;
+.news-wrapper,
+.article-wrapper {
+    grid-column: span 3;
 }
 
-.footer-article {
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
+.news-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.footer-article__img {
-    grid-row: span 3;
+.article-wrapper,
+.article-wrapper__card {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.author {
+    display: grid;
+    gap: 20px;
 }
 
 @media (min-width: 768px) {
@@ -41,54 +47,33 @@
         grid-template-columns: auto repeat(2, max-content);
     }
 
-    .main-article {
-        grid-template-columns: repeat(2, 1fr);
+    .main-section-wrapper {
+        grid-area: 1 / 1 / span 2 / span 2;
     }
 
-    .main-article__img {
-        grid-column: span 2;
-    }
-
-    .article {
-        grid-template-columns: 1fr 2fr;
-    }
-
-    .list--horizontal {
-        margin-top: 50px;
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-auto-flow: column;
-    }
-
-    .footer-article__img {
+    .news-wrapper {
         grid-row: span 2;
+        grid-column: span 1;
+        padding: 20px;
     }
 
-    .footer-article__intro{
-        grid-column: span 2;
+    .article-wrapper {
+        grid-column: span 3;
     }
 }
 
 @media (min-width: 1024px) {
-    .main-content {
-        grid-template-columns: 2fr 1fr;
+    .article-wrapper {
+        grid-column: span 3;
     }
 
-    .article {
-        grid-template-columns: 1fr;
-    }
-
-    .side-section {
-        margin: 0;
-    }
-
-    .footer-list {
-        grid-column: span 2;
+    .article-wrapper,
+    .article-wrapper__list,
+    .main-section-wrapper__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
     }
 }
 
-@media (min-width: 1440px) {
-    .footer-article__intro{
-        grid-column: span 1;
-    }
-}
+/* Luka's challenge end  */
